@@ -1,16 +1,22 @@
 import React from "react";
 
 import UsersItem from "./UserItem";
+import Card from '../../shared/components/UIElements/Card';
+import './UsersList.css'; //check this , it is remomving the list dot and putting the card in the center
 
 function UsersList(props){
     if(props.items.length === 0){
         return(
-            <h2 align="center">No Users Found</h2>
+            <div className="center">
+                <Card>
+                <h2>No users found.</h2>
+                </Card>
+            </div>
         )
     }
 
     return (
-        <ui>
+        <ui className="users-list">
             {props.items.map( user => (
                 <UsersItem
                   key={user.id}
