@@ -7,7 +7,7 @@ import './PlaceList.css';
 function PlaceList(props){
     if(props.items.length === 0){
         return(
-            <div className="place-list center">
+            <div className="place-item__content">
                <Card>
                 <h2>No Places</h2>
                </Card> 

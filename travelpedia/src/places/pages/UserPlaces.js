@@ -1,4 +1,5 @@
 import React from "react";
+import {useParams} from "react-router-dom";
 
 import PlaceList from "../components/PlaceList";
 
@@ -32,7 +33,9 @@ const DUMMY_PLACES = [
   ];
 
 function UserPlaces (props){
-    return <PlaceList items={DUMMY_PLACES}/>;
+    const userId = useParams().userId; // catch the dynamic part of the link ie.userID
+    const loadedPlaces = DUMMY_PLACES.filter(place => place.creator === userId); // fliter and pass the values
+    return <PlaceList items={loadedPlaces}/>;
 }
 
 export default UserPlaces;
