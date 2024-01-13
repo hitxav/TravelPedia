@@ -1,9 +1,9 @@
 import React from "react";
 
-function NewPlace(){
+function NewPlaces(){
     return(
         <h1>Welcome to New Place</h1>
     )
 }
 
-export default NewPlace;
+export default NewPlaces;
