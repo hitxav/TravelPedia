@@ -28,7 +28,7 @@ function PlaceItem(props){
           footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
         >
           <div className="map-container">
-            <h1>My Map</h1>
+            <h1>Map</h1>
           </div>
         </Modal>
         <li className="place-item">
