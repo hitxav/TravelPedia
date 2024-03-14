@@ -6,7 +6,7 @@ import {
   VALIDATOR_REQUIRE,
   VALIDATOR_MINLENGTH,
 } from "../../shared/util/validator";
-import "./NewPlace.css";
+import "./PlaceForm.css";
 
 function formReducer(state,action){
     switch(action.type){

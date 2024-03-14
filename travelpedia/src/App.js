@@ -5,6 +5,7 @@ import Users from "./user/pages/Users.js";
 import NewPlaces from "./places/pages/NewPlaces.js";
 import UserPlaces from "./places/pages/UserPlaces.js";
 import MainNavigation from "./shared/components/Navigation/MainNavigation.js";
+import UpdatePlace from "./places/pages/UpdatePlace.js";
 
 
 function App(){ // exact is used to make it exact to that browser
@@ -21,6 +22,9 @@ function App(){ // exact is used to make it exact to that browser
                         </Route>
                         <Route path="/places/new" exact>
                             <NewPlaces/>
+                        </Route>
+                        <Route path="/places/:placeId">
+                            <UpdatePlace/>
                         </Route>
                         <Redirect to="/" />
                     </Switch>
